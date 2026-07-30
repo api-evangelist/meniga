@@ -1,7 +1,18 @@
 aid: meniga
 name: Meniga
-description: 'Meniga is a company surfaced as a portfolio company of anthemis and added to the API Evangelist
-  network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Meniga is a global leader in digital banking and personal finance management
+  (PFM) solutions, serving over 100 million banking customers across 30 countries
+  through partnerships with major financial institutions. Meniga provides RESTful
+  APIs and mobile SDKs on top of its software products so banks can enrich
+  transaction data, deliver personalized finance management, cashflow forecasting,
+  smart savings, sustainability/carbon insights, and agentic banking experiences
+  inside their own digital channels. The platform is delivered as a white-label,
+  tenant-hosted API (each bank points client SDKs at their own Meniga API URL),
+  secured with OAuth 2.0 and OpenID Connect via Meniga's IdentityServer stack,
+  with official first-party iOS and Android SDKs published to CocoaPods and Maven
+  Central. This profile was enriched from Meniga's public developer surface
+  (developer portal, GitHub organization, and published SDKs).
 url: https://raw.githubusercontent.com/api-evangelist/meniga/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,15 +20,71 @@ x-backed-by:
 - anthemis
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Digital Banking
+- Personal Finance Management
+- Open Banking
+- Transaction Enrichment
+- Financial Services
+- Banking
+- SDK
+image: https://www.meniga.com/wp-content/uploads/meniga-logo.png
 apis: []
+common:
+- type: Website
+  url: https://www.meniga.com
+- type: DeveloperPortal
+  url: https://developer.meniga.cloud
+- type: Documentation
+  url: https://meniga.github.io/mobile-sdk-ios/
+- type: GettingStarted
+  url: https://meniga.github.io/mobile-sdk-ios/
+- type: GitHubOrganization
+  url: https://github.com/meniga
+- type: Blog
+  url: https://www.meniga.com/resources/blog/
+- type: Support
+  url: https://www.meniga.com/contact/
+- type: PrivacyPolicy
+  url: https://www.meniga.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.meniga.com/terms-and-conditions/
+- type: Packages
+  url: packages/meniga-packages.yml
+- type: SDKs
+  url: packages/meniga-packages.yml
+- type: Authentication
+  url: authentication/meniga-authentication.yml
+- type: DomainSecurity
+  url: security/meniga-domain-security.yml
+- type: Conformance
+  url: conformance/meniga-conformance.yml
+- type: LLMsTxt
+  url: llms/meniga-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
