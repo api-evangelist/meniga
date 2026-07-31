@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+notes: >-
+  Probed the standard /.well-known/ discovery surface on Meniga's public hosts.
+  No real discovery documents are exposed: www.meniga.com returns 404 for all
+  probes, and api.meniga.cloud returns HTTP 200 for every /.well-known/ path but
+  serves the single-page-app HTML shell (Content-Type text/html), not a genuine
+  document — so nothing was saved. This is an honest negative result; no WellKnown
+  scoring pointer is wired.
+hosts:
+- host: https://www.meniga.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+- host: https://api.meniga.cloud
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    real_document: false
+    note: SPA HTML shell (text/html), not a JSON OIDC discovery document.
+  - path: /.well-known/security.txt
+    status: 200
+    real_document: false
+    note: SPA HTML shell, not RFC 9116 security.txt.
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    real_document: false
+    note: SPA HTML shell, not an RFC 8414 metadata document.

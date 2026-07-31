@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/meniga
+notes: >-
+  Cross-cutting standards Meniga's API surface conforms to, asserted from the
+  published SDK/identity repositories. No public OpenAPI was available to derive
+  from; entries are evidenced from Meniga's first-party auth stack and product docs.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    Meniga IdentityServer / Meniga.IdentityModel implement OAuth 2.0; SDKs require
+    OAuth credentials to call the REST API.
+- id: oidc
+  conforms: true
+  evidence: >-
+    Meniga.IdentityModel is a helper library for OpenID Connect claims-based identity.
+- id: rest
+  conforms: true
+  evidence: >-
+    SDK docs describe RESTful APIs on top of Meniga software products.
+- id: psd2-open-banking
+  conforms: true
+  evidence: >-
+    Meniga ships an Open Banking product (meniga.com/products/open-banking) for
+    European banks operating under PSD2 account-information access.
+- id: rfc9457-problem-details
+  conforms: false
+- id: fhir-r4
+  conforms: false

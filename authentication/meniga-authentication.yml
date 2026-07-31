@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/meniga/mobile-sdk-ios
+docs: https://meniga.github.io/mobile-sdk-ios/
+notes: >-
+  Meniga's REST API is secured with OAuth 2.0 and OpenID Connect. Meniga runs an
+  IdentityServer-based authorization server (see github.com/meniga/Meniga.IdentityServer
+  and Meniga.IdentityModel). The API is tenant/white-label hosted: each bank or
+  financial institution operates its own Meniga API URL and issues authentication
+  credentials to its client applications, which the mobile SDKs pass through to
+  the tenant authorization server. No public OpenAPI securitySchemes were available
+  to derive from (the developer portal at developer.meniga.cloud is access-gated),
+  so this profile was captured from the published SDK documentation rather than a
+  machine-readable spec.
+summary:
+  types:
+  - oauth2
+  - openIdConnect
+  oauth2_flows:
+  - authorizationCode
+  tenant_hosted: true
+schemes:
+- name: OAuth2
+  type: oauth2
+  flows:
+  - authorizationCode
+  note: Authorization/token endpoints are tenant-specific (per financial institution).
+  sources:
+  - https://meniga.github.io/mobile-sdk-ios/
+- name: OpenIDConnect
+  type: openIdConnect
+  note: >-
+    OpenID Connect on top of Meniga IdentityServer for claims-based identity.
+  sources:
+  - https://github.com/meniga/Meniga.IdentityModel

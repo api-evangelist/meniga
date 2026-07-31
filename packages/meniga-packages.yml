@@ -1,0 +1,36 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/meniga
+notes: >-
+  First-party Meniga client SDKs for consuming the Meniga REST API. Published
+  from the official github.com/meniga organization. Both mobile SDKs are released
+  to public package registries (CocoaPods, Maven Central) under the MIT license.
+packages:
+- language: swift
+  platform: ios
+  registry: cocoapods
+  name: MenigaSDK
+  url: https://cocoapods.org/pods/MenigaSDK
+  source: https://github.com/meniga/mobile-sdk-ios
+  docs: https://meniga.github.io/mobile-sdk-ios/
+  install: "pod 'MenigaSDK'"
+  license: MIT
+  official: true
+- language: java
+  platform: android
+  registry: maven-central
+  name: com.meniga.sdk:sdk-android
+  url: https://mvnrepository.com/artifact/com.meniga.sdk/sdk-android
+  source: https://github.com/meniga/mobile-sdk-android
+  docs: https://meniga.github.io/mobile-sdk-android/
+  install: "implementation 'com.meniga.sdk:sdk-android:x.y.z'"
+  license: MIT
+  official: true
+- language: csharp
+  registry: github
+  name: Meniga.IdentityModel
+  url: https://github.com/meniga/Meniga.IdentityModel
+  description: >-
+    .NET Standard helper library for claims-based identity, OAuth 2.0 and OpenID
+    Connect used by Meniga's IdentityServer-based auth stack.
+  official: true
