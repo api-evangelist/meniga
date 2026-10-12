@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/meniga/integrations
+- https://n8n.io/integrations/meniga/
+- https://composio.dev/toolkits/meniga
+- https://monid.ai/tools/meniga
+checked:
+- https://composio.dev/toolkits/meniga
+- https://monid.ai/tools/meniga
+- https://n8n.io/integrations/meniga/
+- https://zapier.com/apps/meniga/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
