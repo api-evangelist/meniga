@@ -64,6 +64,87 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Meniga is a company surfaced as a portfolio company of anthemis and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.
+Meniga is a global leader in digital banking and personal finance management (PFM) solutions, serving over 100 million banking customers across 30 countries through partnerships with major financial institutions. Meniga provides RESTful APIs and mobile SDKs on top of its software products so banks can enrich transaction data, deliver personalized finance management, cashflow forecasting, smart savings, sustainability/carbon insights, and agentic banking experiences inside their own digital channels. The platform is delivered as a white-label, tenant-hosted API (each bank points client SDKs at their own Meniga API URL), secured with OAuth 2.0 and OpenID Connect via Meniga's IdentityServer stack, with official first-party iOS and Android SDKs published to CocoaPods and Maven Central. This profile was enriched from Meniga's public developer surface (developer portal, GitHub organization, and published SDKs).
 
-Backed by: anthemis
+**Areas:** Company · Fintech · Digital Banking · Personal Finance Management · Open Banking · Transaction Enrichment · Financial Services · Banking · SDK · Data Enrichment
+
+## Meniga on APIs.io
+
+Everything profiled for Meniga is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/meniga/](https://apis.io/providers/meniga/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Meniga Authentication](https://apis.io/security/meniga/meniga-authentication/)
+- [Meniga Domain Security](https://apis.io/security/meniga/meniga-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.meniga.com)
+- [Documentation](https://meniga.github.io/mobile-sdk-ios/)
+- [Getting started](https://meniga.github.io/mobile-sdk-ios/)
+- [Support](https://www.meniga.com/contact/)
+- [Blog](https://www.meniga.com/resources/blog/)
+- [Terms of service](https://www.meniga.com/terms-and-conditions/)
+- [Privacy policy](https://www.meniga.com/privacy-policy/)
+- [GitHub](https://github.com/meniga)
+
+## API Evangelist rating
+
+**Kin Score 21.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 47.6 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.7** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/meniga/](https://apis.io/providers/meniga/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Meniga: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/meniga/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
